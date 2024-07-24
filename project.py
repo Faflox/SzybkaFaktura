@@ -1,7 +1,7 @@
 import tkinter as tk
 import os
 from tkcalendar import DateEntry
-from datetime import datetime, timedelta, date
+from datetime import timedelta, date
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import cm
 from reportlab.lib import colors
@@ -144,7 +144,7 @@ def create_pdf(invoice_number, seller_data, customer_data, data):
     elements.append(table)
     elements.append(Spacer(1, 2 * cm))
     
-    total_price = float(data['net_price']) * (1 + float(data['vat_rate'].strip('%')) / 100)
+    total_price = float(data['net_price']) * (1 + float(data['vat_rate'].strip('%')) / 100 ) * float(data['quantity'])
     total_info = f"<b>Total Price (with VAT):</b> {total_price:.2f} {data['currency']}"
     elements.append(Paragraph(total_info, styles['Normal']))
     elements.append(Spacer(1, 4 * cm))

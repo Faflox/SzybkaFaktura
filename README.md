@@ -1,9 +1,9 @@
-# Fast Invoice Creator
-    Video Demo:  <URL HERE>
+# Simple Invoice Creator
+    Video Demo:  https://www.youtube.com/watch?v=tCyXavaQ7-o
 
 # Overview
 
-Fast Invoice Creator is a desktop app made to help small businesses with accouning.
+Simple Invoice Creator is a desktop app made to help small businesses with accouning.
 It's a free and private option to create an invoice without sharing your data with some on-line provider. It allows for .PDF creation that contains all of the necessary information (at least in Poland) to make it a legal document.
 
 # Distinctiveness and Complexity
